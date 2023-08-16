@@ -1,0 +1,512 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- FOnt Awesome Link  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@400;500;700&display=swap" rel="stylesheet">
+    <!-- Icon  -->
+    <link rel="icon" href="./images/Naifts-min.jpg" />
+        <!-- CSS  -->
+    <link rel="stylesheet" href="./style.css">
+
+    <!-- Javacript  -->
+    <script defer src="./script.js"></script>
+    <title>IFT Portal</title>
+</head>
+<body>
+   <section class="login-page">
+    <div class="login_page--cover">
+        <h3>Information Technology</h3>
+        <div class="login__page--input">
+            <label for="student-id">Student ID:</label> <br>
+            <input type="email" name="student-id"> <br>
+            <label for="password">Password:</label> <br>
+            <input type="password" name="password">
+        </div>
+        <input class="submitBtn" type="submit">
+    </div>
+   </section> 
+
+   <section class="hompage">
+        <header>
+            <div class="header__logo">
+                <img src="./images/Naifts-min.jpg" alt="IFT-logo">
+                <h2>Information Technology Department</h2>
+            </div>
+
+            <div class="right-icon--1">
+                <svg xmlns="http://www.w3.org/2000/svg" height="2.5em" viewBox="0 0 512 512">
+                    <path d="M64 112c-8.8 0-16 7.2-16 16v22.1L220.5 291.7c20.7 17 50.4 17 71.1 0L464 150.1V128c0-8.8-7.2-16-16-16H64zM48 212.2V384c0 8.8 7.2 16 16 16H448c8.8 0 16-7.2 16-16V212.2L322 328.8c-38.4 31.5-93.7 31.5-132 0L48 212.2zM0 128C0 92.7 28.7 64 64 64H448c35.3 0 64 28.7 64 64V384c0 35.3-28.7 64-64 64H64c-35.3 0-64-28.7-64-64V128z"/>
+                </svg>
+            </div>
+            <div class="right-icon--2">
+                <svg xmlns="http://www.w3.org/2000/svg" height="2.5em" viewBox="0 0 448 512">
+                    <path d="M224 0c-17.7 0-32 14.3-32 32V49.9C119.5 61.4 64 124.2 64 200v33.4c0 45.4-15.5 89.5-43.8 124.9L5.3 377c-5.8 7.2-6.9 17.1-2.9 25.4S14.8 416 24 416H424c9.2 0 17.6-5.3 21.6-13.6s2.9-18.2-2.9-25.4l-14.9-18.6C399.5 322.9 384 278.8 384 233.4V200c0-75.8-55.5-138.6-128-150.1V32c0-17.7-14.3-32-32-32zm0 96h8c57.4 0 104 46.6 104 104v33.4c0 47.9 13.9 94.6 39.7 134.6H72.3C98.1 328 112 281.3 112 233.4V200c0-57.4 46.6-104 104-104h8zm64 352H224 160c0 17 6.7 33.3 18.7 45.3s28.3 18.7 45.3 18.7s33.3-6.7 45.3-18.7s18.7-28.3 18.7-45.3z"/>
+                </svg> 
+            </div>
+            <div class="right-icon--3">
+                <svg xmlns="http://www.w3.org/2000/svg" height="2.5em" viewBox="0 0 640 512">
+                    <path d="M88.2 309.1c9.8-18.3 6.8-40.8-7.5-55.8C59.4 230.9 48 204 48 176c0-63.5 63.8-128 160-128s160 64.5 160 128s-63.8 128-160 128c-13.1 0-25.8-1.3-37.8-3.6c-10.4-2-21.2-.6-30.7 4.2c-4.1 2.1-8.3 4.1-12.6 6c-16 7.2-32.9 13.5-49.9 18c2.8-4.6 5.4-9.1 7.9-13.6c1.1-1.9 2.2-3.9 3.2-5.9zM0 176c0 41.8 17.2 80.1 45.9 110.3c-.9 1.7-1.9 3.5-2.8 5.1c-10.3 18.4-22.3 36.5-36.6 52.1c-6.6 7-8.3 17.2-4.6 25.9C5.8 378.3 14.4 384 24 384c43 0 86.5-13.3 122.7-29.7c4.8-2.2 9.6-4.5 14.2-6.8c15.1 3 30.9 4.5 47.1 4.5c114.9 0 208-78.8 208-176S322.9 0 208 0S0 78.8 0 176zM432 480c16.2 0 31.9-1.6 47.1-4.5c4.6 2.3 9.4 4.6 14.2 6.8C529.5 498.7 573 512 616 512c9.6 0 18.2-5.7 22-14.5c3.8-8.8 2-19-4.6-25.9c-14.2-15.6-26.2-33.7-36.6-52.1c-.9-1.7-1.9-3.4-2.8-5.1C622.8 384.1 640 345.8 640 304c0-94.4-87.9-171.5-198.2-175.8c4.1 15.2 6.2 31.2 6.2 47.8l0 .6c87.2 6.7 144 67.5 144 127.4c0 28-11.4 54.9-32.7 77.2c-14.3 15-17.3 37.6-7.5 55.8c1.1 2 2.2 4 3.2 5.9c2.5 4.5 5.2 9 7.9 13.6c-17-4.5-33.9-10.7-49.9-18c-4.3-1.9-8.5-3.9-12.6-6c-9.5-4.8-20.3-6.2-30.7-4.2c-12.1 2.4-24.7 3.6-37.8 3.6c-61.7 0-110-26.5-136.8-62.3c-16 5.4-32.8 9.4-50 11.8C279 439.8 350 480 432 480z"/>
+                </svg>
+            </div>
+            <div class="header__logo--right">
+                <img src="./images/futminna-min.jpeg" alt="futminna-min">
+            </div>
+            <div class="main_menu">
+                <div class="menu_open">
+                    <img src="./images/icon-menu.svg" alt="menu open">
+                </div>
+                <div class="menu_close">
+                    <img src="./images/icon-close-menu.svg" alt="menu open">
+                </div>
+            </div>
+        </header>
+        <div class="nav__dash">
+            <nav class="navbar">
+                <div class="student__info">
+                    <div class="stu__image">
+                        <img src="./images/sict-min.jpg" alt="student">
+                    </div>
+                    <div class="stu__details--board">
+                        <h3>Samuel</h3>
+                        <p>Student ID: M2102258</p>
+                    </div>
+                </div>
+                <div class="nav_links">
+                    <ul>
+                        <hr> <li class="dashboard_link"><a href="">Dashboard</a></li> <hr>
+                        <!-- <li><a href="">Biodata Records</a></li> <hr> --> 
+                        <li class="timetable_link"><a href="">Lecture Timetable</a></li> <hr>
+                        <li class="resources_link"><a href="">Resources</a></li> <hr>
+                        <li class="dept_link"><a href="">Dept. Info</a></li> <hr>
+                        <li class="fee">
+                            <a href="">Fee</a> 
+                            <ul class="dropdown">
+                                <li><a href="">Registration Fee</a></li> <hr>
+                                <li><a href="">Acceptance Fee</a></li> <hr>
+                                <li><a href="">Accomodation Fee</a></li> <hr>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+            <div class="dashboard__page ">
+                <div class="page_greeting">
+                    <p>
+                        <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 640 512"><!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path d="M323.4 85.2l-96.8 78.4c-16.1 13-19.2 36.4-7 53.1c12.9 17.8 38 21.3 55.3 7.8l99.3-77.2c7-5.4 17-4.2 22.5 2.8s4.2 17-2.8 22.5l-20.9 16.2L512 316.8V128h-.7l-3.9-2.5L434.8 79c-15.3-9.8-33.2-15-51.4-15c-21.8 0-43 7.5-60 21.2zm22.8 124.4l-51.7 40.2C263 274.4 217.3 268 193.7 235.6c-22.2-30.5-16.6-73.1 12.7-96.8l83.2-67.3c-11.6-4.9-24.1-7.4-36.8-7.4C234 64 215.7 69.6 200 80l-72 48V352h28.2l91.4 83.4c19.6 17.9 49.9 16.5 67.8-3.1c5.5-6.1 9.2-13.2 11.1-20.6l17 15.6c19.5 17.9 49.9 16.6 67.8-2.9c4.5-4.9 7.8-10.6 9.9-16.5c19.4 13 45.8 10.3 62.1-7.5c17.9-19.5 16.6-49.9-2.9-67.8l-134.2-123zM16 128c-8.8 0-16 7.2-16 16V352c0 17.7 14.3 32 32 32H64c17.7 0 32-14.3 32-32V128H16zM48 320a16 16 0 1 1 0 32 16 16 0 1 1 0-32zM544 128V352c0 17.7 14.3 32 32 32h32c17.7 0 32-14.3 32-32V144c0-8.8-7.2-16-16-16H544zm32 208a16 16 0 1 1 32 0 16 16 0 1 1 -32 0z"/></svg>
+                        Hello ! Welcome Back Samuel Aderine Samuel
+                    </p>
+                </div>
+                <div class="dashboard_details">
+                    <div class="fee_confirmation--con">
+                        <div class="acceptance__con">
+                            <div class="accpt__image">
+                                <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 448 512"><!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path d="M152 24c0-13.3-10.7-24-24-24s-24 10.7-24 24V64H64C28.7 64 0 92.7 0 128v16 48V448c0 35.3 28.7 64 64 64H384c35.3 0 64-28.7 64-64V192 144 128c0-35.3-28.7-64-64-64H344V24c0-13.3-10.7-24-24-24s-24 10.7-24 24V64H152V24zM48 192h80v56H48V192zm0 104h80v64H48V296zm128 0h96v64H176V296zm144 0h80v64H320V296zm80-48H320V192h80v56zm0 160v40c0 8.8-7.2 16-16 16H320V408h80zm-128 0v56H176V408h96zm-144 0v56H64c-8.8 0-16-7.2-16-16V408h80zM272 248H176V192h96v56z"/>
+                                </svg>
+                            </div>
+                                <h3>Acceptance Fee <br>Payment</h3>
+                             <p>YES</p>
+                        </div>
+                        <div class="registration__con">
+                            <div class="reg__image">
+                                <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 448 512"><!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path d="M96 0C43 0 0 43 0 96V416c0 53 43 96 96 96H384h32c17.7 0 32-14.3 32-32s-14.3-32-32-32V384c17.7 0 32-14.3 32-32V32c0-17.7-14.3-32-32-32H384 96zm0 384H352v64H96c-17.7 0-32-14.3-32-32s14.3-32 32-32zm32-240c0-8.8 7.2-16 16-16H336c8.8 0 16 7.2 16 16s-7.2 16-16 16H144c-8.8 0-16-7.2-16-16zm16 48H336c8.8 0 16 7.2 16 16s-7.2 16-16 16H144c-8.8 0-16-7.2-16-16s7.2-16 16-16z"/></svg>
+                            </div>
+                            <h3>Registration Fee <br>  Payment</h3>
+                            <p>YES</p>
+                        </div>
+                        <div class="departmental__con">
+                            <div class="dep__image">
+                                <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 448 512"><!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path d="M96 0C43 0 0 43 0 96V416c0 53 43 96 96 96H384h32c17.7 0 32-14.3 32-32s-14.3-32-32-32V384c17.7 0 32-14.3 32-32V32c0-17.7-14.3-32-32-32H384 96zm0 384H352v64H96c-17.7 0-32-14.3-32-32s14.3-32 32-32zm32-240c0-8.8 7.2-16 16-16H336c8.8 0 16 7.2 16 16s-7.2 16-16 16H144c-8.8 0-16-7.2-16-16zm16 48H336c8.8 0 16 7.2 16 16s-7.2 16-16 16H144c-8.8 0-16-7.2-16-16s7.2-16 16-16z"/></svg>
+                            </div>
+                            <h3>Departmental Fee <br>Payment</h3>
+                            <p>YES</p>
+                        </div>
+                        <div class="faculty__con">
+                            <div class="fac__image">
+                                <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 448 512"><!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path d="M96 0C43 0 0 43 0 96V416c0 53 43 96 96 96H384h32c17.7 0 32-14.3 32-32s-14.3-32-32-32V384c17.7 0 32-14.3 32-32V32c0-17.7-14.3-32-32-32H384 96zm0 384H352v64H96c-17.7 0-32-14.3-32-32s14.3-32 32-32zm32-240c0-8.8 7.2-16 16-16H336c8.8 0 16 7.2 16 16s-7.2 16-16 16H144c-8.8 0-16-7.2-16-16zm16 48H336c8.8 0 16 7.2 16 16s-7.2 16-16 16H144c-8.8 0-16-7.2-16-16s7.2-16 16-16z"/></svg>
+                            </div>
+                            <h3>Faculty Fee <br>Payment</h3>
+                            <p>YES</p>
+                        </div>
+                    </div>
+                    <table>
+                        <div class="get">
+                            <th>Student Records</th>
+                            <!-- <caption>Student Records</caption> -->
+                        </div>
+                            <tr>
+                                <td>Student Name</td>
+                                <td>Samuel Aderine Samuel</td>
+                            </tr>
+                            
+                            <tr>
+                                <td>Student ID</td>
+                                <td>21183648</td>
+                            </tr>
+                            <tr>
+                                <td>Jamb Registration</td>
+                                <td>211836483DE</td>
+                            </tr>
+                            <tr>
+                                <td>Matric No</td>
+                                <td>211836483DE</td>
+                            </tr>
+                            <tr>
+                                <td>Entry session</td>
+                                <td>2021/2022</td>
+                            </tr>
+                            <tr>
+                                <td>Gender</td>
+                                <td>M</td>
+                            </tr>
+                            <tr>
+                                <td>Department</td>
+                                <td>Information Technology</td>
+                            </tr>
+                            <tr>
+                                <td>State/LGA</td>
+                                <td>Abuja/Wuse</td>
+                            </tr>
+                    </table>
+                    <div class="misson_vission">
+                        <div class="dept_mission">
+                            <div class="mission_title">
+                                <h3>OUR MISSION</h3>
+                            </div>
+                            <div class="mission_text">
+                                <p>
+                                    We will be sharing educational resources, books, articles, news, and updates related to the IT field. 
+                                    We encourage healthy discussions and debates regarding various topics related to programming languages, databases, cloud  computing, cybersecurity, and much more. 
+                                    We help in shaping the course of IT by encouraging the use of Technology to run business efficiency, productively and improve the communication between the User and the Server and stay updated in the internet.
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="dept_vission">
+                            <div class="vission_title">
+                                <h3>OUR VISION</h3>
+                            </div>
+                            <div class="vission_text">
+                                <p>
+                                    To share and discuss the current industry trends, upcoming technologies, and new developments in the field of Information Technology.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+         </div>
+   </section>
+
+   <section class="other_pages">
+    <div class="lecture_timetable hidden">
+        <table>
+            <thead>
+                <caption>200LEVEL IFT TIMETABLE 2022/2023 SESSION</caption>
+            <tr>
+                <th>DAYS / TIMES</th>
+                <th>09:00 - 11:00AM</th>
+                <th>11:00 - 01:00PM</th>
+                <th>01:00 - 02:00PM</th>
+                <th>02:00 - 04:00PM</th>
+                <th>04:00 - 06:00PM</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <th>MONDAY</th>
+                <td>CSS216 (NLR 3)</td>
+                <td>+GST208 (NWKLAB)</td>
+                <td rowspan="5"></td>
+                <td></td>
+                <td>*CPT211 (SICTLT)</td>
+            </tr>
+            <tr>
+                <th>TUESDAY</th>
+                <td>MAT212 (SICTLT)</td>
+                <td>CPT211 (SICTLT)</td>
+                <td>IFT213 (NWKLAB)</td>
+                <td></td>
+            </tr>
+            <tr>
+                <th>WEDNESDAY</th>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <th>THURSDAY</th>
+                <td>**IFT211 (SICTLT 2)</td>
+                <td>IFT212 (NWKLAB)</td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <th>FRIDAY</th>
+                <td>GST211 (LT2)</td>
+                <td>*IFT212 (NWKLAB)</td>
+                <td></td>
+                <td></td>
+            </tr>
+        </tbody>
+        </table>
+        <div class="note_timetable">
+            <p>*-| Means an hour class</p>
+            <p>**- Means 3 hour class</p>
+            <p>+ - Means facilitation not lecture</p>
+        </div>
+    </div>
+    <div class="resources hidden">
+        <div class="first_sems--courses">
+            <h3>List Of 200 Level Courses For 2022/2023 Academic Session</h3>
+            <a class="school_drive" href="https://drive.google.com/drive/folders/1kk7rJZLFkSS0EJ0fMnF6rZAfaBASSLlV">Click Me TO Go To DEPT. DRIVE</a>
+            <table>
+                <caption>200 Level First Semester</caption>
+                <tr>
+                    <th>COURSE CODE</th>
+                    <th>COURSE TITLE</th>
+                    <th>UNIT</th>
+                    <th>L</th>
+                    <th>P</th>
+                    <th>T</th>
+                    <th>Prerequisite</th>
+                </tr>
+                <tr>
+                    <td>CPT211</td>
+                    <td>Computer Programming I</td>
+                    <td>3</td>
+                    <td>2</td>
+                    <td>1</td>
+                    <td>-</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>IFT211</td>
+                    <td>Introduction to Web Computing</td>
+                    <td>3</td>
+                    <td>2</td>
+                    <td>1</td>
+                    <td>-</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>IFT212</td>
+                    <td>Fundamentals Of Information Technology</td>
+                    <td>3</td>
+                    <td>2</td>
+                    <td>1</td>
+                    <td>-</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>IFT213</td>
+                    <td>Information Technology In Business</td>
+                    <td>3</td>
+                    <td>2</td>
+                    <td>1</td>
+                    <td>-</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>CSS216</td>
+                    <td>Crytography Theory I</td>
+                    <td>3</td>
+                    <td>2</td>
+                    <td>1</td>
+                    <td>-</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>MAT212</td>
+                    <td>Linear Algebra I</td>
+                    <td>2</td>
+                    <td>1</td>
+                    <td>-</td>
+                    <td>1</td>
+                    <td>MAT121</td>
+                </tr>
+                <tr>
+                    <td>GST211</td>
+                    <td>Logic and Philosophy</td>
+                    <td>2</td>
+                    <td>2</td>
+                    <td>-</td>
+                    <td>-</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>GST208</td>
+                    <td>Entrepreneurship I</td>
+                    <td>2</td>
+                    <td>2</td>
+                    <td>-</td>
+                    <td>-</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td colspan="2">TOTAL</td>
+                    <td>21</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+            </table>
+            <p><strong>Note: Direct Entry 200 Level Students are expected to take GST103 and GST110</strong></p>
+        </div>
+
+        <div class="second_sems--courses">
+            <table>
+                <caption>200 Level Second Semester</caption>
+                <tr>
+                    <th>COURSE CODE</th>
+                    <th>COURSE TITLE</th>
+                    <th>UNIT</th>
+                    <th>L</th>
+                    <th>P</th>
+                    <th>T</th>
+                    <th>Prerequisite</th>
+                </tr>
+                <tr>
+                    <td>CPT221</td>
+                    <td>Computer Programming II</td>
+                    <td>3</td>
+                    <td>2</td>
+                    <td>1</td>
+                    <td>-</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>IFT221</td>
+                    <td>Introduction to Software Engineering</td>
+                    <td>2</td>
+                    <td>2</td>
+                    <td>_</td>
+                    <td>-</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>IFT222</td>
+                    <td>System Analysis and Design For Information Technology</td>
+                    <td>3</td>
+                    <td>2</td>
+                    <td>1</td>
+                    <td>-</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>IFT223</td>
+                    <td>Detabase Management</td>
+                    <td>3</td>
+                    <td>2</td>
+                    <td>1</td>
+                    <td>-</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>IFT224</td>
+                    <td>Information Technology Law, Ethics and patents</td>
+                    <td>2</td>
+                    <td>1</td>
+                    <td>-</td>
+                    <td>1</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>IFT225</td>
+                    <td>Computer Organization and Architecture</td>
+                    <td>3</td>
+                    <td>2</td>
+                    <td>-</td>
+                    <td>1</td>
+                    <td>MAT121</td>
+                </tr>
+                <tr>
+                    <td>CIT224</td>
+                    <td>Discrete Structures</td>
+                    <td>3</td>
+                    <td>2</td>
+                    <td>-</td>
+                    <td>1</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>STA221</td>
+                    <td>Statistics for Physical Sciences & Engineering</td>
+                    <td>4</td>
+                    <td>3</td>
+                    <td>-</td>
+                    <td>1</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td colspan="2">TOTAL</td>
+                    <td>23</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+            </table>
+            <p><strong>Note: Direct Entry 200 Level Students are expected to take IFT211, GST104 and GST121.</strong></p>
+        </div>
+    </div>
+    <div class="dept_info hidden">
+        <h3>Department Information</h3>
+        <div class="dept_lecturer">
+        <table>
+            <tr>
+                <th>Name</th>
+                <th>Position</th>
+            </tr>
+            <tr>
+                <td>Prof. I. O Oyefolahan</td>
+                <td>Head Of Department</td>
+            </tr>
+            <tr>
+                <td>Dr. H. O Aliyu</td>
+                <td>200 Level Adviser</td>
+            </tr>
+            <tr>
+                <td>Dr. H. O Aliyu</td>
+                <td>Exam Officer</td>
+            </tr>
+            <tr>
+                <td>Dr. Isiaq Alabi</td>
+                <td>Lecturer</td>
+            </tr>
+            <tr>
+                <td>Dr. T. O. Callistus</td>
+                <td>Lecturer</td>
+            </tr>
+            <tr>
+                <td>Dr. S. O. Ganiyu</td>
+                <td>Lecturer</td>
+            </tr>
+            <tr>
+                <td>Mr. Anas Sani</td>
+                <td>Lecturer</td>
+            </tr>
+            <tr>
+                <td>Dr. A. O. Grace</td>
+                <td>Lecturer</td>
+            </tr>
+            <tr>
+                <td>Mrs. I. K. Fatima</td>
+                <td>Lecturer</td>
+            </tr>
+            <tr>
+                <td>Dr. A. Abdulkarim</td>
+                <td>Lecturer</td>
+            </tr>
+        </table>
+    </div>
+    </div>
+    <div class="fee"></div>
+   </section>
+</body>
+</html> 

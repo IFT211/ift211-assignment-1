@@ -1,0 +1,247 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+body {
+    font-family: 'Roboto Mono', monospace;
+    display: grid;
+    min-height: 100vh;
+    font-size: 14px;
+}
+.hidden {
+    display: none;
+}
+
+  .login-page {
+    display: none;
+    justify-content: center;
+    align-items: center;
+    background-color: #EEE0C9;
+    
+  }
+  .login_page--cover {
+    padding: 80px;
+    background-color: rgb(255, 255, 255, 0.6);
+  }
+  .login_page--cover h3 {
+    font-size: 1.5rem;
+    color: #96B6C5;
+  }
+ 
+  .submitBtn {
+    display: block;
+    padding: 8px 20px;
+    margin-top: 10px;
+    background-color: blue;
+    color: white;
+    border: 1px solid blue;
+    border-radius: 2px;
+    width: 102%;
+    cursor: pointer;
+    letter-spacing: 1px;
+  }
+
+  input {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+
+  /* HOMPAGE  */
+
+  header {
+    display: flex;
+    background-color: #606;
+    padding: 10px;
+    cursor: pointer;
+  }
+  nav {
+    background-color: #606;
+
+  }
+  nav li {
+    list-style: none;
+  }
+ 
+
+  table {
+    border-collapse: collapse;
+    width: 100%;
+  }
+  
+  td {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 8px;
+  }
+  
+  tr:nth-child(even) {
+    background-color: #dddddd;
+  }
+
+  th {
+    background-color: aqua;
+  }
+  .nav__dash {
+    display: grid;
+    grid-template-columns: 300px 1fr;
+  }
+  .header__logo  {
+    display: flex;
+    color: #fff;
+  }
+  .header__logo h2{
+    margin-top: 10px;
+  }
+  .header__logo img {
+    width: 5%;
+    margin-right: 10px;
+  }
+  .header__logo--right img {
+    width: 50%;
+  }
+  .right-icon--1, .right-icon--2, .right-icon--3 {
+    margin-right: 20px;
+  }
+  .student__info {
+    display: grid;
+    grid-template-columns: 50px 1fr;
+    margin-bottom: 30px;
+    background-color: #53a3a3;
+    padding: 20px 10px;
+  }
+  .stu__image {
+    display: grid;
+    background-color: #fff;
+    border-radius: 50%;
+    place-items: center;
+  }
+  .stu__image img {
+    width: 60%;
+  }
+  .stu__details--board {
+    margin-left: 20px;
+  }
+  .stu__details--board p {
+    color: #fff;
+    font-size: 14px;
+  }
+  .nav_links a {
+   text-decoration: none;
+   color: #fff;
+   font-size: 18px;
+  }
+  .nav_links li {
+    margin: 20px;
+  }
+  .dropdown {
+    padding: 1em 0em;
+    position: absolute;
+    display: none;
+    font-size: 14px;
+    cursor: pointer;
+  }
+
+ /* hover state  */
+ .nav_links a:hover {
+    color: black;
+  }
+  .fee:hover .dropdown {
+    display: block;
+  }
+  /* Dashboard  */
+  .dashboard__page {
+    margin: 30px;
+  }
+ .fee_confirmation--con {
+    display: flex;
+ }
+ .acceptance__con, .registration__con, .departmental__con, .faculty__con {
+    margin: 20px;
+    padding: 10px 20px;
+    border-radius: 2%;
+ }
+
+ .acceptance__con {
+    background-color: #f2dede;
+    color: #a94442;
+ }
+ .registration__con {
+    background-color: #dff0d8;
+    color: #3c763d;
+ }
+ .departmental__con {
+    background-color: #d9edf7;
+    color: #31708f;
+ }
+ .faculty__con {
+    background-color: #fcf8e3;
+    color: #8a6d3b;
+ }
+ .misson_vission {
+    margin: 20px 0;
+    display: flex;
+ }
+.dept_mission, .dept_vission {
+    background-color: #d9edf7;
+    border-radius: 10px;
+    margin-right: 10px;
+    width: 50%;
+}
+.mission_title, .vission_title{
+    background-color: #3c763d;
+    border-radius: 10px 10px 0 0;
+    padding: 20px;
+}
+.mission_text, .vission_text{
+    padding: 15px 10px;
+    font-size: 14px;
+    line-height: 1.2rem;
+}
+.lecture_timetable, .resources, .dept_info {
+  position: absolute;
+  top: 15%;
+  left: 25%;
+}
+.lecture_timetable th {
+  border: 1px solid #dddddd;
+  text-align: left;
+  padding: 8px;
+}
+.first_sems--courses table, .second_sems--courses table {
+  /* width: 80%; */
+}
+.lecture_timetable caption {
+  margin-bottom: 10px;
+}
+.note_timetable {
+  margin: 10px;
+}
+.first_sems--courses, .second_sems--courses {
+  margin-bottom: 20px ;
+}
+.menu_open, .menu_close {
+  display: none;
+}
+@media screen and (max-width: 768px) {
+.menu_open {
+  display: grid;
+}
+.nav__dash {
+  display: grid;
+  grid-template-columns: 1fr;
+}
+.lecture_timetable, .resources, .dept_info {
+  position: static;
+  /* width: 80%; */
+  margin: 20px;
+}
+.header__logo h2 {
+  font-size: 14px;
+}
+.right-icon--1, .right-icon--2, .right-icon--3 {
+  display: none;
+}
+.dropdown {
+  display: none;
+}
+} 
